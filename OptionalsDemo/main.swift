@@ -31,7 +31,9 @@ if myOptional2 != nil{
     print("myOptional2 was found to be nil. ")
 }
 
+// MARK: 3. Optional Binding
 
-
-
-
+if let safeOptional = myOptional{
+    let text: String = safeOptional
+    print(safeOptional)
+}
