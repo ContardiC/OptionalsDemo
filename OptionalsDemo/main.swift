@@ -37,3 +37,17 @@ if let safeOptional = myOptional{
     let text: String = safeOptional
     print(safeOptional)
 }
+
+// MARK: 5. Optional Chaining
+
+struct MyStructOptional{
+    var property = 123
+    func method(){
+        print("I am the struct's method.")
+    }
+}
+let myOptional4 : MyStructOptional?
+
+myOptional4 = MyStructOptional()
+
+print(myOptional4?.property)
